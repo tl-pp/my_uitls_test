@@ -2,3 +2,5 @@
 *.so
 .vscode/
 build
+bin
+lib
