@@ -23,14 +23,12 @@ project(my_test)
 add_executable(${PROJECT_NAME})
 #src file
 target_sources(${PROJECT_NAME} PUBLIC
-  ${CMAKE_CURRENT_LIST_DIR}/src/fmt_test.hpp
   ${CMAKE_CURRENT_LIST_DIR}/src/fmt_test.cpp
 )
 
 #test file
 target_sources(${PROJECT_NAME} PUBLIC
   ${CMAKE_CURRENT_LIST_DIR}/test/test.cpp
-  
 )
 
 
