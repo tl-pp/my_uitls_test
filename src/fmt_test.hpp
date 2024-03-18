@@ -64,7 +64,7 @@ public:
     CFmtTest();
     ~CFmtTest();
 public:
-    static int test();
+    int FmtTest();
 private:
 };
 

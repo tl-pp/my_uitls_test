@@ -8,17 +8,17 @@
 
 #include "fmt_test.hpp"
 
-CFmtTest::CFmtTest()
-{
-
+CFmtTest::CFmtTest() 
+{  
+    std::cout << fmt::format("{:=^60}", "create CFmtTest") << std::endl;
 }
 
-CFmtTest::~CFmtTest()
+CFmtTest::~CFmtTest() 
 {
-
+    std::cout << fmt::format("{:=^60}", "destroy CFmtTest") << std::endl;
 }
 
-int CFmtTest::test( )
+int CFmtTest::FmtTest( )
 {
     // 1.Result Print "Hello, world!"
     fmt::print("Hello, world!\n");
@@ -111,7 +111,7 @@ int CFmtTest::test( )
     std::string s_compilt = fmt::format(FMT_COMPILE("{}"), 42);
 
     // 12. 文件
-    fmt::print(stderr, "Don't {}!", "panic\n");
+    fmt::print(stderr, "Don't {}!\n", "panic");
 
     auto out = fmt::output_file("guide.txt");
     out.print("Don't {}", "Panic\n");
