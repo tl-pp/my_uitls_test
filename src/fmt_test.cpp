@@ -114,7 +114,7 @@ int CFmtTest::FmtTest( )
     fmt::print(stderr, "Don't {}!\n", "panic");
 
     auto out = fmt::output_file("guide.txt");
-    out.print("Don't {}", "Panic\n");
+    out.print("Don't {}\n", "Panic");
 
     return 0;
 }
