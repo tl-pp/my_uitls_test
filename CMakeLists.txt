@@ -23,7 +23,10 @@ project(my_test)
 add_executable(${PROJECT_NAME})
 #src file
 target_sources(${PROJECT_NAME} PUBLIC
+  ${CMAKE_CURRENT_LIST_DIR}/src/fmt_test.hpp
   ${CMAKE_CURRENT_LIST_DIR}/src/fmt_test.cpp
+  ${CMAKE_CURRENT_LIST_DIR}/src/log.hpp
+  ${CMAKE_CURRENT_LIST_DIR}/src/log.cpp
 )
 
 #test file
@@ -40,6 +43,9 @@ target_include_directories(${PROJECT_NAME} SYSTEM PUBLIC
 # fmtlib
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/third_party/fmt)
 target_link_libraries(${PROJECT_NAME} PUBLIC ThirdParty::fmt)
+
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/third_party/glog)
+target_link_libraries(${PROJECT_NAME} PUBLIC ThirdParty::glog)
 
 
 # target_link_libraries(${PROJECT_NAME} PUBLIC ThirdParty::fmt)
