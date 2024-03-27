@@ -1,5 +1,5 @@
-#ifndef FMT_TEST
-#define FMT_TEST
+#ifndef UTILS_FMT_TEST_HPP
+#define UTILS_FMT_TEST_HPP
 #include "fmt/format.h"
 #include <fmt/ranges.h>
 #include <fmt/chrono.h>

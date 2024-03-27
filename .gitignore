@@ -1,6 +1,6 @@
 *.a
 *.so
 .vscode/
-build
+build/*
 bin
 lib
